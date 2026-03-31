@@ -4,9 +4,9 @@
     --text-main: #1f2937;
     --text-muted: #4b5563;
     --text-dark: #f9fafb;
-    --accent: #2563eb;
-    --accent-glow: rgba(37, 99, 235, 0.15);
-    --accent-secondary: #4f46e5;
+    --accent: #6fa3d8;
+    --accent-glow: rgba(111, 163, 216, 0.15);
+    --accent-secondary: #5a8fc7;
     --glass-bg: rgba(255, 255, 255, 0.7);
     --glass-border: rgba(0, 0, 0, 0.05);
     --glass-hover: rgba(255, 255, 255, 0.95);
@@ -20,6 +20,12 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 60px;
+    /* Offsets anchor links so they don't hide under the sticky header */
 }
 
 body {
@@ -213,8 +219,7 @@ p {
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.5);
+    /* hover effects removed */
 }
 
 .btn-outline {
@@ -224,8 +229,7 @@ p {
 }
 
 .btn-outline:hover {
-    background: var(--glass-bg);
-    border-color: var(--text-muted);
+    /* hover effects removed */
 }
 
 .btn-large {
@@ -274,11 +278,13 @@ section {
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 5vw + 1rem, 5rem);
-    font-weight: 800;
-    letter-spacing: -1px;
+    font-size: clamp(3.5rem, 6vw + 1rem, 6rem);
+    font-weight: 400;
+    letter-spacing: -0.5px;
     margin-bottom: 1.5rem;
     display: inline-block;
+    line-height: 1.1;
+    color: #4a5568;
 }
 
 .heading-icon {
@@ -294,27 +300,15 @@ section {
 }
 
 .word-lighter {
-    color: #eab308;
-    /* Dark yellow / light orange */
+    color: #6fa3d8;
     display: inline-block;
-    transform: translateY(8px);
-}
-
-.icon-lighter {
-    color: #eab308;
-    transform: translateY(6px);
+    font-weight: 300;
 }
 
 .word-higher {
-    color: #60a5fa;
-    /* Cloudy blue, not too light */
+    color: #6fa3d8;
     display: inline-block;
-    transform: translateY(-8px);
-}
-
-.icon-higher {
-    color: #60a5fa;
-    transform: translateY(-10px);
+    font-weight: 300;
 }
 
 .subtitle {
@@ -392,35 +386,9 @@ section {
     object-fit: cover;
     position: relative;
     z-index: 10;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
-.pulse-ring {
-    content: '';
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    position: absolute;
-    background: var(--gradient-main);
-    z-index: 1;
-    opacity: 0.15;
-    animation: pulse 3s infinite alternate;
-}
 
-@keyframes pulse {
-    0% {
-        transform: scale(0.9);
-        opacity: 0.15;
-        filter: blur(20px);
-    }
-
-    100% {
-        transform: scale(1.1);
-        opacity: 0.25;
-        filter: blur(30px);
-    }
-}
 
 /* Approach Section */
 .section-header {
@@ -495,9 +463,9 @@ section {
 /* Pricing */
 .pricing-cards {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
-    max-width: 450px;
+    max-width: 900px;
     margin: 0 auto 4rem;
 }
 
@@ -572,6 +540,15 @@ section {
 
 .pricing-btn {
     width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-body) !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
 }
 
 /* Contact */
@@ -581,7 +558,8 @@ section {
 }
 
 .contact h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 400;
     margin-bottom: 3rem;
 }
 
@@ -650,4 +628,43 @@ footer {
         padding-top: 8rem;
         min-height: 85vh;
     }
+}
+
+/* Custom Google Calendar Button Wrapper */
+.calendar-btn-wrapper {
+    width: 100%;
+    margin-top: auto;
+    height: 54px;
+}
+
+.calendar-btn-wrapper > div,
+.calendar-btn-wrapper .calendar-scheduling-button {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.calendar-btn-wrapper button,
+.calendar-btn-wrapper [role="button"] {
+    position: relative !important;
+    width: 100% !important;
+    height: 54px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+    background: var(--gradient-main) !important;
+    box-shadow: 0 4px 15px var(--accent-glow) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.calendar-btn-wrapper span,
+.calendar-btn-wrapper .VfPpkd-vQzf8d,
+.calendar-btn-wrapper * {
+    color: white !important;
+    font-family: var(--font-body) !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
 }

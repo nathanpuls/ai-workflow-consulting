@@ -49,10 +49,8 @@
         <section class="hero" id="home">
             <div class="hero-content">
                 <h1>
-                    Work <span class="word-lighter">lighter</span> <i data-lucide="arrow-down"
-                        class="heading-icon icon-lighter"></i><br />
-                    Think <span class="word-higher">higher</span> <i data-lucide="arrow-up"
-                        class="heading-icon icon-higher"></i>
+                    Work <span class="word-lighter">lighter</span><br />
+                    Think <span class="word-higher">higher</span>
                 </h1>
                 <p class="subtitle">
                     We help consultants, clinicians, attorneys, and founders work with greater clarity, focus, and
@@ -80,8 +78,7 @@
                     </p>
                 </div>
                 <div class="about-visual">
-                    <div class="pulse-ring"></div>
-                    <img src="profile.jpg" alt="Nathan Puls" class="profile-image">
+                    <img src="profile-cropped.jpg" alt="Nathan Puls" class="profile-image">
                 </div>
             </div>
         </section>
@@ -126,8 +123,23 @@
             </div>
 
             <div class="pricing-cards">
-                <!-- Pricing Tier 1 -->
+                <!-- Pricing Tier 1: Survey -->
                 <div class="glass-card fade-in">
+                    <h3 class="pricing-title">AI Workflow Assessment</h3>
+                    <div class="pricing-price">$15</div>
+                    <p class="pricing-desc">A basic digital survey to evaluate your setup.</p>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check-circle-2"></i> Workflow analysis</li>
+                        <li><i data-lucide="check-circle-2"></i> Custom-tailored PDF strategy</li>
+                        <li><i data-lucide="check-circle-2"></i> Targeted AI tool recommendations</li>
+                        <li><i data-lucide="check-circle-2"></i> Actionable implementation steps</li>
+                    </ul>
+                    <a href="https://forms.gle/9qaE6HTReH6t7SAy8" target="_blank" class="btn btn-primary pricing-btn">Get Your Custom Report</a>
+                </div>
+
+                <!-- Pricing Tier 2: Consult -->
+                <div class="glass-card fade-in pricing-featured" style="animation-delay: 0.1s">
+                    <div class="popular-badge">Premium</div>
                     <h3 class="pricing-title">AI Workflow Consult</h3>
                     <div class="pricing-price">$150</div>
                     <p class="pricing-desc">A rapid diagnostic of your current systems.</p>
@@ -137,15 +149,32 @@
                         <li><i data-lucide="check-circle-2"></i> Custom AI tool recommendations</li>
                         <li><i data-lucide="check-circle-2"></i> Actionable implementation roadmap</li>
                     </ul>
-                    <a href="mailto:hello@nathanpuls.com?subject=Inquiry: AI Workflow Consult"
-                        class="btn btn-outline pricing-btn">Book Consult</a>
+                    <div class="calendar-btn-wrapper">
+                        <!-- Google Calendar Appointment Scheduling begin -->
+                        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                        <script>
+                        (function() {
+                          var target = document.currentScript;
+                          window.addEventListener('load', function() {
+                            calendar.schedulingButton.load({
+                              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3JJfrMQk37BXcdJzviM4tQpde9lj89Cx4v6CeOEMGbu6MokyymO39h4evmM8fVwFQvzK14Y7ck?gv=true',
+                              color: '#039BE5',
+                              label: 'Book an appointment',
+                              target,
+                            });
+                          });
+                        })();
+                        </script>
+                        <!-- end Google Calendar Appointment Scheduling -->
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="contact" id="contact">
-            <h2>Ready to lighten your workflow?</h2>
-            <a href="mailto:hello@nathanpuls.com" class="btn btn-primary btn-large">Start the Conversation</a>
+            <h2>Ready to <span style="color: var(--accent); font-weight: 300;">lighten</span> your workflow?</h2>
+            
             <div class="contact-info">
                 <a href="mailto:hello@nathanpuls.com">hello@nathanpuls.com</a>
                 <a href="tel:2815440771">(281) 544-0771</a>
