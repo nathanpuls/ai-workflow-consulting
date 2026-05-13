@@ -422,6 +422,15 @@ footer a:hover {
     padding-bottom: 0.2rem;
   }
 
+  .brand span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
