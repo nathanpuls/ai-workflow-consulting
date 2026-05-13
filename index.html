@@ -1,192 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple systems and automation help for small businesses with too much manual work." />
+    <title>Nathan Puls | Simple Systems for Small Business</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,650&family=Inter:wght@400;500;650;750&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="cms-loading">
+    <div class="cms-status" id="cmsStatus">Loading copy...</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nathan Puls - AI Workflow Consulting for high-responsibility professionals.">
-    <title>AI Workflow Consulting | Nathan Puls</title>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Nathan Puls home">
+        <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="18" />
+          <path d="M18 45L23 19L46 45L51 19" />
+          <circle cx="18" cy="45" r="4" />
+          <circle cx="51" cy="19" r="4" />
+        </svg>
+        <span data-copy="nav_brand">Nathan Puls</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#fixes" data-copy="nav_offer">What I Fix</a>
+        <a href="#process" data-copy="nav_process">How It Works</a>
+        <a href="#start" data-copy="nav_pricing">Start Here</a>
+      </nav>
+    </header>
 
-    <!-- Modern Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png">
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <link rel="stylesheet" href="style.css?v=12">
-</head>
-
-<body>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-
-    <nav>
-        <div class="nav-content">
-            <a href="#home" class="logo">
-                <img src="logo.png" alt="NP Logo" style="height: 32px; width: auto; margin-right: 12px;" />
-                <span class="nav-title">AI Workflow Consulting</span>
-            </a>
-
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-                <i data-lucide="menu"></i>
-            </button>
-            <div class="nav-links" id="nav-links">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#approach" class="nav-link">Framework</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-copy="hero_eyebrow">Simple systems for small businesses</p>
+          <h1 data-copy="hero_headline">There’s probably an easier way to do this.</h1>
+          <p class="hero-text" data-copy="hero_subheadline">
+            I help small business owners clean up repetitive admin work with simple systems that are easy to use.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" data-copy="primary_cta_text" data-href-copy="primary_cta_url" href="#">Get a Workflow Review</a>
+            <a class="button secondary" data-copy="secondary_cta_text" href="#fixes">See what can be fixed</a>
+          </div>
+          <p class="hero-note" data-copy="hero_note">No giant overhaul. Just practical cleanup for the work that keeps repeating.</p>
         </div>
-    </nav>
+        <aside class="portrait-panel" aria-label="About Nathan">
+          <img id="profileImage" src="./assets/profile-cropped.jpg" alt="Nathan Puls" />
+          <div>
+            <h2 data-copy="about_heading">Hi, I'm Nathan.</h2>
+            <p data-copy="about_kicker">Psychiatric Nurse Practitioner, systems thinker, workflow untangler.</p>
+          </div>
+        </aside>
+      </section>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h1>
-                    Work <span class="word-lighter">lighter</span><br />
-                    Think <span class="word-higher">higher</span>
-                </h1>
-                <p class="subtitle">
-                    We help consultants, clinicians, attorneys, and founders work with greater clarity, focus, and
-                    confidence by simplifying how ideas move, how people connect, and how work gets done.
-                </p>
-                <div class="action-buttons">
-                    <a href="#approach" class="btn btn-primary">Learn How</a>
-                </div>
-            </div>
-        </section>
+      <section class="intro">
+        <div>
+          <h2 data-copy="problem_heading">If the little manual chores keep piling up, there’s probably an easier way.</h2>
+        </div>
+        <p data-copy="problem_body">
+          Intake, follow-up, scheduling, emails, documents, reminders, reporting, handoffs. The usual stuff that eats the week.
+        </p>
+      </section>
 
-        <section class="about glass-panel" id="about">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2>Hi, I'm Nathan Puls.</h2>
-                    <h3 class="role">Psychiatric Nurse Practitioner & Systems Thinker</h3>
-                    <p>
-                        My background in healthcare shapes how I think about systems. In psychiatry,
-                        clarity, focus, and reliable communication matter in every decision.
-                    </p>
-                    <p>
-                        I’m interested in how better systems help professionals stay productive and
-                        work at their best. That curiosity led me to AI workflow design, where I apply
-                        structured thinking to improve how work gets done.
-                    </p>
-                </div>
-                <div class="about-visual">
-                    <img src="profile-cropped.jpg" alt="Nathan Puls" class="profile-image">
-                </div>
-            </div>
-        </section>
+      <section class="about-band">
+        <p data-copy="about_body">
+          Healthcare taught me to value clear communication, reliable processes, and tools that make the day easier. That’s the lens I bring to small business systems.
+        </p>
+      </section>
 
-        <section class="approach" id="approach">
-            <div class="section-header">
-                <h2>Framework</h2>
-                <p>Practical AI workflows to streamline your daily operations.</p>
-            </div>
+      <section class="fixes" id="fixes">
+        <div class="section-heading">
+          <p class="eyebrow">A few good places to start</p>
+          <h2>Common work that can get lighter</h2>
+        </div>
+        <div class="fix-grid" id="fixGrid"></div>
+      </section>
 
-            <div class="cards">
-                <div class="glass-card fade-in">
-                    <div class="card-icon"><i data-lucide="search"></i></div>
-                    <h3>Discover</h3>
-                    <p>Review your workflow to identify meaningful opportunities for greater efficiency and
-                        ease.</p>
-                </div>
-                <div class="glass-card fade-in" style="animation-delay: 0.1s">
-                    <div class="card-icon"><i data-lucide="scissors"></i></div>
-                    <h3>Simplify</h3>
-                    <p>Streamline routine, manual tasks.</p>
-                </div>
-                <div class="glass-card fade-in" style="animation-delay: 0.2s">
-                    <div class="card-icon"><i data-lucide="settings-2"></i></div>
-                    <h3>Integrate</h3>
-                    <p>Build intuitive, realistic systems designed to consistently make your day run smoother.</p>
-                </div>
-            </div>
+      <section class="process" id="process">
+        <div class="section-heading">
+          <p class="eyebrow">The process</p>
+          <h2 data-copy="process_heading">A simple way to start</h2>
+          <p data-copy="process_intro">Start with one workflow. Find the friction, simplify the steps, build the smallest useful fix.</p>
+        </div>
+        <div class="step-list" id="stepList"></div>
+      </section>
 
-            <div class="manifesto-quote glass-panel fade-in" style="animation-delay: 0.3s">
-                <blockquote>
-                    Your workflow is never going to be perfect, but it can be better. It's not just about saving time.
-                    It's about enjoying the process.
-                </blockquote>
-            </div>
-        </section>
+      <section class="quote-section">
+        <blockquote data-copy="quote">Your workflow does not have to be perfect. It can be lighter.</blockquote>
+      </section>
 
-        <section class="pricing" id="pricing">
-            <div class="section-header">
-                <h2>Pricing</h2>
+      <section class="offers" id="start">
+        <div class="section-heading">
+          <p class="eyebrow">Start small</p>
+          <h2>Pick one annoying process and fix that first</h2>
+        </div>
+        <div class="offer-grid" id="offerGrid"></div>
+      </section>
 
-            </div>
+      <section class="faq">
+        <div class="section-heading">
+          <p class="eyebrow">Plain answers</p>
+          <h2>Not a giant tech project</h2>
+        </div>
+        <div class="faq-list" id="faqList"></div>
+      </section>
 
-            <div class="pricing-cards">
-                <!-- Pricing Tier 1: Survey -->
-                <div class="glass-card fade-in">
-                    <h3 class="pricing-title">AI Workflow Assessment</h3>
-                    <div class="pricing-price">$15</div>
-                    <p class="pricing-desc">A basic digital survey to evaluate your setup.</p>
-                    <ul class="pricing-features">
-                        <li><i data-lucide="check-circle-2"></i> Workflow analysis</li>
-                        <li><i data-lucide="check-circle-2"></i> Custom-tailored PDF strategy</li>
-                        <li><i data-lucide="check-circle-2"></i> Targeted AI tool recommendations</li>
-                        <li><i data-lucide="check-circle-2"></i> Actionable implementation steps</li>
-                    </ul>
-                    <a href="https://forms.gle/9qaE6HTReH6t7SAy8" target="_blank" class="btn btn-primary pricing-btn">Get Your Custom Report</a>
-                </div>
-
-                <!-- Pricing Tier 2: Consult -->
-                <div class="glass-card fade-in pricing-featured" style="animation-delay: 0.1s">
-                    <div class="popular-badge">Premium</div>
-                    <h3 class="pricing-title">AI Workflow Consult</h3>
-                    <div class="pricing-price">$150</div>
-                    <p class="pricing-desc">A rapid diagnostic of your current systems.</p>
-                    <ul class="pricing-features">
-                        <li><i data-lucide="check-circle-2"></i> 30-minute discovery video call</li>
-                        <li><i data-lucide="check-circle-2"></i> Workflow optimization strategy</li>
-                        <li><i data-lucide="check-circle-2"></i> Custom AI tool recommendations</li>
-                        <li><i data-lucide="check-circle-2"></i> Actionable implementation roadmap</li>
-                    </ul>
-                    <div class="calendar-btn-wrapper">
-                        <!-- Google Calendar Appointment Scheduling begin -->
-                        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-                        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-                        <script>
-                        (function() {
-                          var target = document.currentScript;
-                          window.addEventListener('load', function() {
-                            calendar.schedulingButton.load({
-                              url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3JJfrMQk37BXcdJzviM4tQpde9lj89Cx4v6CeOEMGbu6MokyymO39h4evmM8fVwFQvzK14Y7ck?gv=true',
-                              color: '#039BE5',
-                              label: 'Book an appointment',
-                              target,
-                            });
-                          });
-                        })();
-                        </script>
-                        <!-- end Google Calendar Appointment Scheduling -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <h2>Ready to <span style="color: var(--accent); font-weight: 300;">lighten</span> your workflow?</h2>
-            
-            <div class="contact-info">
-                <a href="mailto:hello@nathanpuls.com">hello@nathanpuls.com</a>
-                <a href="tel:2815440771">(281) 544-0771</a>
-            </div>
-        </section>
+      <section class="contact">
+        <div>
+          <h2 data-copy="contact_heading">Want me to look at one messy process?</h2>
+          <p data-copy="contact_body">Send me the thing you keep doing manually. I’ll help you find the first fix.</p>
+        </div>
+        <a class="button primary" data-copy="primary_cta_text" data-href-copy="primary_cta_url" href="#">Get a Workflow Review</a>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Nathan Puls | AI Workflow Consulting.</p>
+      <span data-copy="footer_text">Nathan Puls | Practical systems and automation help</span>
+      <a id="footerContact" href="tel:+12815440771">(281) 544-0771</a>
     </footer>
 
-    <script src="script.js?v=12"></script>
-</body>
-
+    <script src="./app.js"></script>
+  </body>
 </html>

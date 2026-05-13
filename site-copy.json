@@ -1,0 +1,77 @@
+{
+  "copy": {
+    "site_title": "Nathan Puls | Simple Systems for Small Business",
+    "nav_brand": "Nathan Puls",
+    "nav_offer": "What I Fix",
+    "nav_process": "How It Works",
+    "nav_pricing": "Start Here",
+    "hero_eyebrow": "Simple systems for small businesses",
+    "hero_headline": "There’s probably an easier way to do this.",
+    "hero_subheadline": "I help small business owners clean up repetitive admin work with simple systems that are easy to use.",
+    "primary_cta_text": "Get a Workflow Review",
+    "primary_cta_url": "https://docs.google.com/forms/d/e/1FAIpQLSfj-C9cO5cWcQgPbD9q94Aqp3IBPIcB383EeKRoajQ_gSBXqw/viewform",
+    "secondary_cta_text": "See what can be fixed",
+    "hero_note": "No giant overhaul. Just practical cleanup for the work that keeps repeating.",
+    "about_heading": "Hi, I'm Nathan.",
+    "about_kicker": "Psychiatric Nurse Practitioner, systems thinker, workflow untangler.",
+    "about_body": "Healthcare taught me to value clear communication, reliable processes, and tools that make the day easier. That’s the lens I bring to small business systems.",
+    "problem_heading": "If the little manual chores keep piling up, there’s probably an easier way.",
+    "problem_body": "Intake, follow-up, scheduling, emails, documents, reminders, reporting, handoffs. The usual stuff that eats the week.",
+    "process_heading": "A simple way to start",
+    "process_intro": "Start with one workflow. Find the friction, simplify the steps, build the smallest useful fix.",
+    "quote": "Your workflow does not have to be perfect. It can be lighter.",
+    "contact_heading": "Want me to look at one messy process?",
+    "contact_body": "Send me the thing you keep doing manually. I’ll help you find the first fix.",
+    "footer_text": "Nathan Puls | Practical systems and automation help"
+  },
+  "offers": [
+    {
+      "name": "Workflow Review",
+      "price": "$99",
+      "description": "A focused look at where your business is losing time to repetitive work and what to fix first.",
+      "bullets": ["Short intake review", "Top 3 cleanup opportunities", "Simple first-fix recommendation"],
+      "cta": "Start with a review"
+    },
+    {
+      "name": "Starter Buildout",
+      "price": "$350+",
+      "description": "One practical system or automation built around a single recurring problem.",
+      "bullets": ["One workflow implemented", "Walkthrough video", "One revision after you test it"],
+      "cta": "Ask about a buildout"
+    }
+  ],
+  "fixes": [
+    {"title": "Lead follow-up", "description": "Reply faster, remind yourself less, and keep promising inquiries from disappearing."},
+    {"title": "Client intake", "description": "Turn scattered forms, emails, and notes into one cleaner starting point."},
+    {"title": "Email templates", "description": "Make common replies faster without sounding stiff or robotic."},
+    {"title": "Scheduling reminders", "description": "Reduce back-and-forth and missed next steps."},
+    {"title": "Reports and trackers", "description": "Pull recurring information into a place you can actually scan."},
+    {"title": "Internal handoffs", "description": "Make the next step obvious when work moves from one person or tool to another."}
+  ],
+  "steps": [
+    {"step": "1", "title": "Spot the drag", "description": "We look for the manual steps that repeat, get forgotten, or create friction."},
+    {"step": "2", "title": "Simplify the path", "description": "We trim the process before adding tools, so the fix stays understandable."},
+    {"step": "3", "title": "Build the helper", "description": "We create the form, template, tracker, automation, or handoff that does the job."},
+    {"step": "4", "title": "Make it usable", "description": "You get a plain-English walkthrough so the system feels like yours."}
+  ],
+  "faqs": [
+    {"question": "Is this only AI automation?", "answer": "No. Sometimes AI is useful, sometimes a form, template, spreadsheet, or simple automation is enough. The goal is a better system, not forcing a trend into your business."},
+    {"question": "Do I need to know what I want automated?", "answer": "No. You can start with the annoying task, the messy handoff, or the thing you keep forgetting. I help translate that into a practical fix."},
+    {"question": "Do you work remotely?", "answer": "Yes. The service is built to work over the internet with forms, calls, shared docs, and walkthrough videos."},
+    {"question": "What kind of businesses is this for?", "answer": "Small service businesses, solo operators, consultants, clinicians, coaches, and teams that have outgrown doing everything manually."}
+  ],
+  "settings": {
+    "profile_image_url": "./assets/profile-cropped.jpg",
+    "email": "mailto:hello@nathanpuls.com",
+    "phone_display": "(281) 544-0771",
+    "accent_word": "lighter",
+    "font_heading": "Fraunces",
+    "font_body": "Inter",
+    "color_background": "#fbfaf4",
+    "color_text": "#1b2430",
+    "color_muted": "#607080",
+    "color_primary": "#2f5f8f",
+    "color_secondary": "#8db7d8",
+    "color_tertiary": "#5f8fb4"
+  }
+}
