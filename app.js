@@ -132,11 +132,16 @@ function renderSettings(settings) {
     footerEmail.textContent = email;
     footerEmail.href = settings.email;
   }
-  setText("#footerContact", settings.phone_display);
   const footerContact = document.querySelector("#footerContact");
-  if (footerContact && settings.phone_display) {
-    const digits = settings.phone_display.replace(/\D/g, "");
-    if (digits.length >= 10) footerContact.href = `tel:+1${digits.slice(-10)}`;
+  if (footerContact) {
+    if (settings.phone_display) {
+      footerContact.hidden = false;
+      footerContact.textContent = settings.phone_display;
+      const digits = settings.phone_display.replace(/\D/g, "");
+      if (digits.length >= 10) footerContact.href = `tel:+1${digits.slice(-10)}`;
+    } else {
+      footerContact.hidden = true;
+    }
   }
   applyTheme(settings);
 }

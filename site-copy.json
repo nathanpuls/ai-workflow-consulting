@@ -63,7 +63,6 @@
   "settings": {
     "profile_image_url": "./assets/profile-cropped.jpg",
     "email": "mailto:hello@nathanpuls.com",
-    "phone_display": "(281) 544-0771",
     "accent_word": "lighter",
     "font_heading": "Fraunces",
     "font_body": "Inter",
