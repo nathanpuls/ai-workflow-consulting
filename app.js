@@ -126,6 +126,12 @@ function renderSettings(settings) {
   if (profileImage && settings.profile_image_url) {
     profileImage.src = settings.profile_image_url;
   }
+  const footerEmail = document.querySelector("#footerEmail");
+  if (footerEmail && settings.email) {
+    const email = settings.email.replace(/^mailto:/, "");
+    footerEmail.textContent = email;
+    footerEmail.href = settings.email;
+  }
   setText("#footerContact", settings.phone_display);
   const footerContact = document.querySelector("#footerContact");
   if (footerContact && settings.phone_display) {
